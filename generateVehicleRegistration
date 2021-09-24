@@ -1,0 +1,23 @@
+#generate Vehicle Reg.Number
+import random
+class Transport:
+    def vehicleRegistration(self):
+        pass
+class PunjabTransport(Transport):
+    def vehicleRegistration(self):
+        no=random.randrange(20, 50, 3)
+        print("PB08",no)
+class HaryanaTransport(Transport):
+    def vehicleRegistration(self):
+        no=random.randrange(20, 50, 3)
+        print("HR02",no)
+class BiharTransport(Transport):
+    def vehicleRegistration(self):
+        no=random.randrange(20, 50, 3)
+        print("BR05",no)
+P1=PunjabTransport()
+P1.vehicleRegistration()
+H1=HaryanaTransport()
+H1.vehicleRegistration()
+B1=BiharTransport()
+B1.vehicleRegistration()
