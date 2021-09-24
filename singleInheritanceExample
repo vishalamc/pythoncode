@@ -1,0 +1,35 @@
+class Student:
+    def __init__(self):
+        self._studentName="Manpreet Singh"
+        self._regno=11201123
+        self._marks1=0
+        self._marks2=0
+        self._marks3=0
+        self._marks4=0
+        self._marks5=0
+        self._Total=0
+    def getStudentDetails(self):
+        print("Student Name: ",self._studentName)
+        print("Student Reg.No.: ",self._regno)
+    def setMarks(self,m1,m2,m3,m4,m5):
+        self._marks1=m1
+        self._marks2=m2
+        self._marks3=m3
+        self._marks4=m4
+        self._marks5=m5
+        self._Total=self._marks1+self._marks2+self._marks3+self._marks4+self._marks5
+        return self._Total
+class Result(Student):
+    def __init__(self):
+        self.PassingMarks=200
+    def checkResult(self):
+        total=self.setMarks(25,30,40,35,40)
+        if total>=200:
+            print("pass")
+        else:
+            print("Fail")
+
+s1=Student()
+s1.getStudentDetails()
+r1=Result()
+r1.checkResult()
